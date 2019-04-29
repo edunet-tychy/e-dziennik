@@ -12,10 +12,10 @@ if($_SESSION['kto'] != "Administrator"){
   exit();
 }
 
-$username = "root";
+$username = "";
 $password = "";
-$hostname = "localhost";
-$dbname   = "zs6_tychy";
+$hostname = "";
+$dbname   = "";
  
 //W przypadku braku zmiennej systemowej dostępu do programu MYSQLDUMP podajemy pełną ścieżkę dostępu 
 //W innym przypadku wystarczy podać "mysqldump --add-drop-table ..."
