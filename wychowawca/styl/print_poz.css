@@ -1,0 +1,220 @@
+#kontener {
+  margin-top: 0px;
+}
+#czescGlowna{
+  border: 0px;
+  width : 1000px;
+  clear : left;
+  overflow: hidden;
+}
+
+#logo{
+  display: none;
+}
+
+#opis{
+  display: none;
+}
+
+#spis{
+  display: none;
+}
+
+#nawig_druk{
+  display: none;
+}
+
+#time-2{
+  display: none;
+}
+
+#nagRamka{
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#zestawienie
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 960px;
+	border-collapse: collapse;
+}
+#zestawienie th.zach
+{
+	width: 60px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+#zestawienie th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+#zestawienie th.ng
+{
+	width:35px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 9px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+#zestawienie td
+{
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+#zestawienie td
+{
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+#zestawienie td.zach-2
+{
+	font-size: 10px;
+	border-right: 1px solid #ccc;
+}
+
+#zestawienie #p_l_str
+{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#zestawienie #lewy
+{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#zestawienie td.gr-2
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+#zestawienie-2
+{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	border-collapse: collapse;
+}
+#zestawienie-2 th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+#zestawienie-2 th.ng
+{
+	width: 35px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 10px;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+#zestawienie-2 td
+{
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+#zestawienie-2 td.miesiac
+{
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 25px;
+	border: 1px solid #ccc;
+}
+#zestawienie-2 th.msc
+{
+	width: 150px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+#zestawienie-2 td.frek
+{
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+#zestawienie-2 th.raz
+{
+	width: 80px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+#zestawienie-2 th.podtyp
+{
+	width: 120px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+#zestawienie-2 #uczen
+{
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#zestawienie-2 #prawy
+{
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#numer{
+	width: 35px;	
+}
+#stopka{
+  display: none;
+}

@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+div{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+#logo{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+#end{
+    position: static;
+    left: 770px;
+    top: 120px;
+}
+#srodek{
+	margin-top: 10px;
+	text-align: center;
+}
+#dziennik{
+    position: absolute;
+    left: 130px;
+    top: 30px;	
+}
+#topDiv{
+	background-color: red;
+	text-align :center;
+	width :1085px;
+	margin-left :auto;
+	margin-right:auto;
+}
+#baner{
+	background-color: #FC0;
+	text-align :center;
+	width :1085px;
+	margin-left :auto;
+	margin-right:auto;
+	height : 50px;
+}
+#headerMainDiv{
+width : 900px;
+height : 50px;
+float : left;
+}
+#men{
+	background-color:#FFC;
+	border : 0;
+	text-align :center;
+	width :1085px;
+	height :50px;
+}
+#headerUserInfoDiv{
+	background-color:#FFC;
+	width : 175px;
+	height : 50px;
+	float : right;
+}
+#mainContentDiv{
+	background-color: #CFC;
+	width : 1085px;
+	min-height: 600px;
+	clear : left;
+}
+#footerDiv{
+	background-color:#FFC;
+	width : 1085px;
+	height : 30px;
+}
+/* Okno logowania */
+#logowanie{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+input {
+        border: 1px dotted #cce8ff;
+        padding: 5px;
+        width: 200px;
+        margin-bottom: 20px;
+		font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+}
+      input#submit {
+		font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+        color: #fff;
+        background-color: #1954ab;
+        border: none;
+        border-radius: 15px;
+        width: 100px;
+		cursor: pointer;
+}
+      input#submit:hover {
+        color: #000;
+        background-color: #efefef;
+}
+      fieldset {
+        width: 340px;
+        border: 1px solid #cce8ff;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: right;
+}
+      legend {
+        background-color: #1954ab;
+        border: 1px solid #1954ab;
+        border-radius: 25px;
+		padding: 10px 20px;
+		font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+        text-align: left;
+		color: #fff;
+        text-transform: uppercase;
+}
+label {
+		font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+        text-align: left;
+		margin-right: 20px;	
+}
+#pl_user, #pl_haslo, #info {
+		font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+		font-size: 14px;
+		color: #f00;
+}
+/*---- Linki ---- */
+
+a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #aaa;
+}
+p.info{
+	color:#ccc;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+p.info2{
+	color:#999;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+p.opis{
+	margin-top: -60px;
+	margin-bottom: 60px;
+	color: #999;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+/* usunięcie domyślnych właściwości CSS z elementów - ol - oraz - ul */
+#menu, #menu ul, #menu ol {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+/* wygląd głównego elementu - ol */
+#menu {
+  background-color:#FFF;
+  font-size:14px;
+  line-height:30px;
+  text-align:center;
+}
+
+/* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+#menu a {
+  display:block;
+  text-decoration:none;
+  color:#000;
+  padding:0 5px;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol */
+#menu > li {
+  float:left;
+  width:154px;
+  margin-left:1px;
+  background-color:#FDD700;
+  height:30px;
+}
+
+/* wygląd elementu - li - pierwszego dziecka elementu - ol */
+#menu > li:first-child {
+  margin-left:0;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > li:hover {
+  background-color:#EEE;
+}
+
+/* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > a {
+  color:#09C;
+}
+
+/* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > ul {
+  display:block;
+}
+
+/* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+/* wygląd głównych rozwijanych elementów - ul */
+#menu > li > ul {
+	    text-align:left;
+		border-left: 2px dashed;
+		display:none;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li {
+  position:relative;
+  background-color:#EEE;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li > a {
+  border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+#menu > li > ul > li:hover {
+  background-color:#DDD;
+}
+
+/* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+#menu > li > ul > li:hover > a {
+  color:#09C;
+}
+
+/* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+#menu > li > ul > li > ol {
+  display:none;
+  width:100%;
+  position:absolute;
+  left:100%;
+  margin-top:-2em;
+}
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+#menu > li > ul > li:hover > ol {
+  display:block;
+}
+
+/* wygląd elementów - li - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li {
+  background-color:#CCC;
+}
+
+/* wygląd elementów - a - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li > a {
+  border-top:1px solid #FFF;
+  border-left:1px solid #FFF;
+}
+
+/* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+#menu > li > ul > li > ol > li > a:hover {
+  color:#09C;
+}
+
+/* ------------------------WSPÓLNE----------------------- */
+
+/* strzałka w prawo */
+#menu .dol {
+  background-image:url('down.png');
+  background-repeat:no-repeat;
+  background-position:98% center;
+}
+
+/* strzałka w dół */
+#menu .prawo {
+  background-image:url('right.png');
+  background-repeat:no-repeat;
+  background-position:98% center;
+}

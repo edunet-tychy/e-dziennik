@@ -1,0 +1,2011 @@
+@charset "utf-8";
+/* --------------------------------------------------- */
+/*						OKNO DZIENNIKA				   */
+/* --------------------------------------------------- */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+div{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#kontener {
+	width: 1240px;
+	min-height: 600px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cce8ff;
+	text-align: center;
+	overflow: hidden;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+#logo {
+	background-color: #1954ab;
+	text-align :center;
+	width:1240px;
+	margin-left :auto;
+	margin-right:auto;
+	height : 130px;
+}
+
+#opis{
+	background-color: #cce8ff;
+	border: 1px solid #1954ab;
+	width : 1238px;
+	height : 50px;
+	float : left;
+}
+
+
+#spis{
+	background-color: #cce8ff;
+	border-left: 1px solid #1954ab;
+	border-right: 1px solid #1954ab;
+	text-align :center;
+	width:1239px;
+	height: 82px;
+}
+
+#czescGlowna{
+	border: 1px solid #1954ab;
+	background-color: #FFF;
+	width : 1238px;
+	min-height: 600px;
+	clear : left;
+	overflow: hidden;
+}
+
+#stopka{
+	background-color: #1954ab;
+	width : 1240px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 30px;
+}
+#nowosc{
+  margin-top: 16px;
+  margin-left: 60px;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #05477E;
+  font-weight: bold;
+  float: left;
+}
+
+p.opis{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 25px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;	
+}
+p.opis-2{
+  position: absolute;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 305px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+h2.opis{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:10px;
+  margin-bottom:0px;
+  margin-left: 15px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h2.opis-2{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding: 1px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+p.stopka{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	margin-top:0px;
+	margin-left: 6px;
+	padding: 6px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+}
+.button {
+  cursor:pointer;
+}
+#zalogowany{
+	margin-top: -60px;
+	margin-bottom: 60px;
+	padding-right: 30px;
+	color: #FFF;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+p.info{
+	padding-top: 2px;
+	padding-right: 30px;
+	text-align: right;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.panel{
+	padding-top: 10px;
+	padding-left: 180px;
+	text-align: left;
+  	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.panel-2{
+	padding-top: 10px;
+	padding-left: 65px;
+	text-align: left;
+  	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.kontrola {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+p.poczta {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+span {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #F00;
+}
+
+span.list {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003BC7;
+}
+
+span.poczta {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+}
+
+#wpisPasswd {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #F00;
+}
+
+#wpisPasswdKontrola{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+
+#konPasswd {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+	margin: 10px;
+}
+
+#konLoginu {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+#konDanych {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+h3 {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 0 20px 0;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#nagRamka1, #nagRamka2, #nagRamka3{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#nagRamka{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#dane-ucznia{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 0px 20px 0px;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#baza {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+ul.opis {
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 45px;
+  text-align: left;
+  font-size: 11px;	
+}
+
+/* --------------------------------------------------- */
+/*							LINKI					   */
+/* --------------------------------------------------- */
+
+a.linki {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+}
+a.linki:hover {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #aaa;
+}
+a.linki-2 {
+	color: #03358C;
+	text-decoration: none;
+	padding: 3px 3px;
+}
+a.linki-2:hover {
+	color: #939393;
+	text-decoration: none;
+	padding: 3px 3px;
+}
+
+/* --------------------------------------------------- */
+/*					LEWA I PRAWA STRONA				   */
+/* --------------------------------------------------- */
+
+.center {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+.center-2 {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+.center-3 {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+}
+.center-4 {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+.left {
+	float: left;
+	width: 500px;
+	margin: 20px 0px 0px 20px;
+}
+
+.right {
+	border: 1px solid #FFF;
+	float: right;
+	width: 650px;
+	margin: 20px 20px 0 20px;  
+}
+.lewy {
+	text-align: left;
+}
+.prawy {
+	text-align: right;
+}
+
+/* --------------------------------------------------- */
+/*						FORMULARZE					   */
+/* --------------------------------------------------- */
+
+form, fieldset {
+	margin: 0;
+	padding: 0px;
+	border: 0;
+}
+td.dane {
+	margin: 5px;
+	width: 110px;
+	display: block;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	padding: 5px;
+}
+
+td.dane-3 {
+	width: 90px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px 0px 0px 20px;
+}
+
+td.dane-4 {
+	width: 150px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding: 2px 0px 0px 20px;
+}
+
+td.dane-5 {
+	width: 150px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding: 10px 0px 10px 20px;
+}
+
+td.dane-6 {
+	width: 90px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	text-align: left;
+	padding: 10px 0px 0px 5px;
+}
+
+select {
+	width: 260px;
+}
+
+select.min {
+	width: 198px;
+}
+
+select.min-1 {
+	width: 100px;
+	height: 28px;
+	font-size: 11px;
+}
+
+select.min-2 {
+	width: 60px;
+}
+
+select.min-3 {
+	width: 200px;
+	font-size: 10px;
+	padding: 2px;
+}
+
+select.min-4 {
+	width: 80px;
+	height: 28px;
+	font-size: 11px;
+}
+
+select.min-5 {
+	width: 500px;
+}
+
+select.min-6 {
+	width: 400px;
+}
+
+select.min-7 {
+	width: 150px;
+}
+select.min-7a {
+	width: 150px;
+}
+select.min-8 {
+	width: 250px;
+}
+select.min-9 {
+	width: 250px;
+}
+
+input.opcja1, input.opcja2, input.opcja3 {
+	cursor: pointer;
+}
+
+input.for-oc {
+	background:transparent;
+  	border: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	color: black;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+input.for-oc-br {
+	background:transparent;
+  	border: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+input.for-oc-bra {
+	background:transparent;
+  	border: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+input.for-oc-br-2 {
+	background:transparent;
+  	border: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+}
+
+input.for-oc-br-3 {
+	background:transparent;
+	border-top: 0px;
+	border-bottom: 1px solid #ddd;
+	border-left: 0px;
+	border-right: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	text-align: left;
+	width: 350px;
+	height: 20px;
+	cursor: pointer;
+}
+input.for-oc-br-4 {
+	background: #00a9dd;
+  	border: 0px;
+  	margin: 1px;
+	vertical-align: middle;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+}
+
+input.pole, input.pole-center, select, textarea {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.pole:focus, input.pole-center:focus, textarea:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.dane {
+	width: 800px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.dane:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.dane-2 {
+	width: 400px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.dane-2:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.dane-3 {
+	width: 200px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.dane-3:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+input.dane-4 {
+	width: 610px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.dane-4:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.dane-1 {
+	width: 100px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.dane-1:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.button {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	text-align: center;
+	margin: auto;
+}
+
+input.przycisk {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input.przycisk-oc {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+}
+
+input.przycisk-st {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	margin-top: 10px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+}
+
+.op {
+	color: #000;
+	font-weight: bold;
+}
+
+#plec {
+	width: 198px
+}
+
+#zmien {
+	margin-left: 50px;
+}
+#konDanych {
+	margin-left: 50px;
+}
+/* --------------------------------------------------- */
+/*						TABELA USER - LEWY			   */
+/* --------------------------------------------------- */
+#user-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 650px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#user-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#user-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#user-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA USER - PRAWY			   	   */
+/* --------------------------------------------------- */
+#user-tabela-p
+{ 
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin-left: 350px;
+	width: 650px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#user-tabela-p th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#user-tabela-p td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#user-tabela-p tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA CENTER 				   */
+/* --------------------------------------------------- */
+#center-tabela
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 750px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*				TABELA CENTER PODRĘCZNIKI			   */
+/* --------------------------------------------------- */
+#center-tabela-pod
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 1200px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 2					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-2
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 900px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod-2 th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod-2 td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-2 td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-2 tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA POCZTA					   */
+/* --------------------------------------------------- */
+#center-tabela-poczta
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 1000px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#center-tabela-poczta th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-poczta td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-poczta td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+
+#center-tabela-poczta tbody tr:hover td
+{
+	color: #009;
+	background: #F2F2F2;
+}
+
+
+/* --------------------------------------------------- */
+/*					TABELA POCZTA 2					   */
+/* --------------------------------------------------- */
+#center-tabela-poczta-2
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 650px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#center-tabela-poczta-2 th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-poczta-2 td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-poczta-2 td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+
+#center-tabela-poczta-2 tbody tr:hover td
+{
+	color: #009;
+	background: #F2F2F2;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 3					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-3
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 550px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 4					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-4
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 1000px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod-4 th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod-4 td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 td.tresc-2
+{
+	width: 500px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA PASS 				   */
+/* --------------------------------------------------- */
+#center-tabela-ps
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 800px;
+	border-collapse: collapse;
+}
+#center-tabela-ps td
+{
+	width: 200px;
+	height: 30px;
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-ps td.prawy
+{
+	width: 240px;
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+	text-align: right;
+}
+#center-tabela-ps td.lewy
+{
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+	text-align: left;
+}
+#center-tabela-ps td{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	padding: 7px;
+}
+
+
+/* --------------------------------------------------- */
+/*					TABELA PLAN LEKCJI				   */
+/* --------------------------------------------------- */
+#plan
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 1200px;
+	border-collapse: collapse;
+}
+#plan tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#plan th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 2px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan th.ng
+{
+	width: 10px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 6px;
+}
+#plan td
+{
+	width: 90px;
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#plan td.gr
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+}
+#plan td.gr-2
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#plan td.godz
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #ECF7FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#plan td.godz-2
+{
+	width: 60px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #ECF7FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+}
+#plan td.dwa
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	border-bottom: 2px solid #88CAFF;
+}
+#przycisk, #konWpis {
+	padding-top: 20px;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA OCENY				   */
+/* --------------------------------------------------- */
+#plan-oc
+{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 1200px;
+	border-collapse: collapse;
+}
+#plan-oc tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#plan-oc th
+{
+	height: 18px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 5px;
+}
+#plan-oc th.opis
+{
+	height: 18px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 2px;
+}
+#plan-oc th.prawy
+{
+	height: 12px;
+	text-align: right;
+}
+#plan-oc #lp
+{
+	width: 15px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-oc #wyl
+{
+	width: 25px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-oc #wyl2
+{
+	width: 27px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-oc #dane
+{
+	width: 130px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-oc td
+{
+	height: 25px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+#plan-oc td.ucz
+{
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	text-align: left;
+	padding-left: 5px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+#plan-oc td.nr
+{
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #669;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA OBECNOŚĆ				   */
+/* --------------------------------------------------- */
+#plan-ob
+{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 450px;
+	border-collapse: collapse;
+}
+#plan-ob tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#plan-ob th
+{
+	height: 18px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 5px;
+}
+#plan-ob th.opis
+{
+	height: 18px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 2px;
+}
+#plan-ob th.prawy
+{
+	height: 12px;
+	text-align: right;
+}
+#plan-ob #lp
+{
+	width: 25px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-ob #wyl
+{
+	width: 25px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-ob #dane
+{
+	width: 140px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan-ob td
+{
+	height: 25px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+#plan-ob td.ucz
+{
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	text-align: left;
+	padding-left: 10px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+#plan-ob td.nr
+{
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #669;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+}
+
+
+/* --------------------------------------------------- */
+/*						TABELE						   */
+/* --------------------------------------------------- */
+
+#przedmioty, #szkola, #klasy
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 400px;
+	border-collapse: collapse;
+}
+
+/* --------------------------------------------------- */
+/*						ZAKŁADKI					   */
+/* --------------------------------------------------- */
+
+.nawigacja {
+	margin-top: 20px;
+	margin-left: 140px;
+	text-align:left;
+}
+
+.nawigacja li {
+	display: inline;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #00a9dd;
+}
+
+.nawigacja li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 30px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+
+.nawigacja_new {
+	margin-top: 50px;
+	margin-left: 140px;
+	text-align:left;
+}
+
+.nawigacja_new li {
+	display: inline;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #00a9dd;
+}
+
+.nawigacja_new li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 30px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja_new li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja_new .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja_new .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja_pr {
+	margin-top: 20px;
+	margin-right: 100px;
+	text-align:right;
+}
+
+.nawigacja_pr li {
+	display: inline;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #00a9dd;
+}
+
+.nawigacja_pr li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 30px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja_pr li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja_pr .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja_pr .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+
+.nawigacja_sem {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: -40px;
+	text-align:left;
+}
+
+.nawigacja_sem li {
+	display: inline;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #00a9dd;
+}
+
+.nawigacja_sem li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 30px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja_sem li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja_sem .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja_sem .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+#view{
+	display: none;
+}
+
+#temat{
+	display: none;
+}
+
+#sk_nad{
+	display: none;
+}
+
+/* --------------------------------------------------- */
+/*						ZAKŁADKI OCENY				   */
+/* --------------------------------------------------- */
+
+.nawigacja-2 {
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right: 15px;
+	text-align:left;
+}
+
+.nawigacja-2 li {
+	margin-top: 17px;
+	display: inline-block;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	background: #00a9dd;
+}
+
+.nawigacja-2 li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja-2 li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja-2 .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja-2 .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+#view-2{
+	display: none;
+}
+
+/* --------------------------------------------------- */
+/*					CZĘŚĆ GÓRNA MENU 				   */
+/* --------------------------------------------------- */
+
+/* reset domyślnych ustawien CSS*/
+#menu, #menu ul, #menu ol {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+/* wygląd części głównej - OL */
+#menu {
+	background-color:#FFF;
+	font-size:13px;
+	line-height:30px;
+	text-align:center;
+}
+
+/* wygląd wszystkich elementów - a - w elemencie - ol */
+#menu a {
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	font-weight: bold;
+	padding:0 5px;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol */
+#menu > li {
+	float:left;
+	width:154px;
+	margin-left:1px;
+	background-color:#1954ab;
+	height:30px;
+}
+
+/* wygląd elementu - li - pierwszego dziecka elementu - ol */
+#menu > li:first-child {
+	margin-left:0;
+}
+
+/* tło - li */
+#menu > li:hover {
+	background-color: #00a9dd;
+}
+
+/* kolor czcionki - li*/
+#menu > li:hover > a {
+	color: #F0FCFF;
+}
+
+/* wygląd elementu - ul - dziecka elementu - li */
+#menu > li:hover > ul {
+	display:block;
+}
+
+p.menu{
+	margin:auto;
+	color:#fff;
+	font-weight: bold;
+	cursor: default;
+}
+
+/* --------------------------------------------------- */
+/*			CZĘŚĆ ROZWIJANA MENU-POZIOM-1 			   */
+/* --------------------------------------------------- */
+
+/* wygląd głównych rozwijanych elementów - ul */
+#menu > li > ul {
+	text-align:left;
+	display:none;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li {
+	position:relative;
+	background-color: #1954ab;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li > a {
+	border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li:hover {
+	background-color:#00a9dd;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li:hover > a {
+	color:#fff;
+}
+
+/* --------------------------------------------------- */
+/*			CZĘŚĆ ROZWIJANA MENU-POZIOM-2 			   */
+/* --------------------------------------------------- */
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+#menu > li > ul > li > ol {
+	display:none;
+	width:100%;
+	position:absolute;
+	left:100%;
+	margin-top:-20px;
+}
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej*/
+#menu > li > ul > li:hover > ol {
+	display:block;
+}
+
+/* wygląd elementów - li - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li {
+	background-color:#1954ab;
+}
+
+/* wygląd elementów - a - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li > a {
+	border-top:1px solid #FFF;
+	border-left:1px solid #FFF;
+}
+
+/* wygląd elementu - a - w drugiej części rozwijanej*/
+#menu > li > ul > li > ol > li > a:hover {
+	background-color:#aaa;
+	color: #fff;
+}
+
+/* --------------------------------------------------- */
+/*				ELEMENTY WSPÓLNE MENU				   */
+/* --------------------------------------------------- */
+
+/* strzałka w prawo */
+#menu .dol {
+	background-image:url('../image/down.png');
+	background-repeat:no-repeat;
+	background-position:98% center;
+}
+
+/* strzałka w dół */
+#menu .prawo {
+	background-image:url('../image/right.png');
+	background-repeat:no-repeat;
+	background-position:98% center;
+}
+
+/* --------------------------------------------------- */
+/*					PANEL STARTOWY					   */
+/* --------------------------------------------------- */
+
+.linia {
+	height: 1px;
+	width: 910px;
+	background-color:#CCC;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.linia-2 {
+	height: 1px;
+	width: 1200px;
+	background-color:#CCC;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.linia-3 {
+	height: 1px;
+	width: 1200px;
+	background-color:#CCC;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#panel {
+	margin: 30px auto auto 250px;
+	width:1000px;
+	background-color: transparent;
+}
+#panel .linka {
+	border:0px solid #FFF;
+	float:left;
+	width:94px;
+	margin-left:0px;
+	margin-right:20px;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:15px 20px 15px 20px;
+}
+#panel .icona {
+	padding:0px 0px 5px 0px;
+}
+
+#panel .info {
+	text-align:center;
+	font-weight:bold;
+	color:#069;
+	width:134px;
+	margin-left:-20px;
+}
+#panel .linka:hover {
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#CCE8FF');
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#CCE8FF));
+	background:-moz-linear-gradient(-90deg,#fff,#CCE8FF);
+	
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	
+	cursor:pointer;
+	
+	-webkit-font-smoothing:subpixel-antialiased!important;
+}
+#panel .linka:hover .info a {
+	color:#000;
+	text-decoration:none;
+}
+#panel a:link {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  	font-size: 12px;
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel a:visited {
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel a:active {
+	color: #900;
+	text-decoration: none;
+}
+#panel .odstep {
+	clear:both;
+	height:1px;
+	background-color:#fff;
+	margin-top:10px;
+	margin-bottom:10px
+}
+#panel-n {
+	margin: 30px auto auto 400px;
+	width:1000px;
+	background-color: transparent;
+}
+#panel-n .linka {
+	border:0px solid #FFF;
+	float:left;
+	width:94px;
+	margin-left:0px;
+	margin-right:20px;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:15px 20px 15px 20px;
+}
+#panel-n .icona {
+	padding:0px 0px 5px 0px;
+}
+
+#panel-n .info {
+	text-align:center;
+	font-weight:bold;
+	color:#069;
+	width:134px;
+	margin-left:-20px;
+}
+#panel-n .linka:hover {
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#CCE8FF');
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#CCE8FF));
+	background:-moz-linear-gradient(-90deg,#fff,#CCE8FF);
+	
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	
+	cursor:pointer;
+	
+	-webkit-font-smoothing:subpixel-antialiased!important;
+}
+#panel-n .linka:hover .info a {
+	color:#000;
+	text-decoration:none;
+}
+#panel-n a:link {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  	font-size: 12px;
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel-n a:visited {
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel-n a:active {
+	color: #900;
+	text-decoration: none;
+}
+#panel-n .odstep {
+	clear:both;
+	height:1px;
+	background-color:#fff;
+	margin-top:10px;
+	margin-bottom:10px
+}

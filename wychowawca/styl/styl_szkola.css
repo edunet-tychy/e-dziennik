@@ -1,0 +1,1099 @@
+@charset "utf-8";
+/* --------------------------------------------------- */
+/*						OKNO DZIENNIKA				   */
+/* --------------------------------------------------- */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+div{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#kontener {
+	width: 1240px;
+	min-height: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: auto;	
+	margin-left: auto;
+	background-color: #cce8ff;
+	text-align: center;
+	overflow: hidden;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+#logo {
+	background-color: #1954ab;
+	text-align :center;
+	width:1240px;
+	margin-left :auto;
+	margin-right:auto;
+	height : 130px;
+}
+
+#opis{
+	background-color: #cce8ff;
+	border: 1px solid #1954ab;
+	width : 1238px;
+	height : 50px;
+	float : left;
+}
+
+#spis{
+	background-color: #cce8ff;
+	border-left: 1px solid #1954ab;
+	border-right: 1px solid #1954ab;
+	text-align :center;
+	width:1239px;
+	height: 82px;
+}
+
+#czescGlowna{
+	border: 1px solid #1954ab;
+	background-color: #FFF;
+	width : 1238px;
+	min-height: 600px;
+	clear : left;
+	overflow: hidden;
+}
+
+#stopka{
+	background-color: #1954ab;
+	width : 1240px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 30px;
+}
+
+#zapis{
+	float : left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	margin-left: 450px;
+	margin-top: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #F7070B;
+}
+
+.left-2 {
+	float: left;
+	width: 750px;
+	margin: 0px 0px 0px 20px;
+}
+
+input[type="button"] {
+  cursor:pointer;
+}
+
+p.frek{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 25px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;	
+}
+p.frek-2{
+  position: absolute;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 305px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+h2.frek{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:10px;
+  margin-bottom:0px;
+  margin-left: 15px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h2.frek-2{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding: 1px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ul.frek {
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 45px;
+  text-align: left;
+  font-size: 11px;	
+}
+#nowosc{
+  margin-top: 16px;
+  margin-left: 60px;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #05477E;
+  font-weight: bold;
+  float: left;
+}
+
+p.opis{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 25px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;	
+}
+p.opis-2{
+  position: absolute;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 305px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+h2.opis{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:10px;
+  margin-bottom:0px;
+  margin-left: 15px;
+  padding: 6px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+h2.opis-2{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding: 1px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+p.stopka{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	margin-top:0px;
+	margin-left: 6px;
+	padding: 6px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#zalogowany{
+	margin-top: -60px;
+	margin-bottom: 60px;
+	padding-right: 30px;
+	color: #FFF;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+p.info{
+	padding-top: 2px;
+	padding-right: 30px;
+	text-align: right;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.panel{
+	padding-top: 10px;
+	padding-left: 180px;
+	text-align: left;
+  	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+p.panel-2{
+	padding-top: 10px;
+	padding-left: 65px;
+	text-align: left;
+  	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.kontrola {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+p.poczta {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+/*span {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #F00;
+}*/
+
+span.list {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003BC7;
+}
+
+span.poczta {
+	
+	text-align: left;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #F00;
+}
+
+#wpisPasswd {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #F00;
+}
+
+#wpisPasswdKontrola{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+
+#Passwd_kon {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #F00;
+}
+
+#Login_kon {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #F00;
+}
+
+#konDanych {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+h3 {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 100px 20px 100px;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+h3.center {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	text-align: center;
+	color: #01294f;
+	margin: 30px 0px 30px 0px;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#nagRamka1, #nagRamka2, #nagRamka3{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#nagRamka{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#dane-ucznia{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 0px 20px 0px;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#baza {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#klasa {
+	margin-right: 190px;
+	margin-top: -31px;
+	color: #1954AB;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	float : right;
+}
+#time{
+	margin-right: 50px;
+	margin-top: -31px;
+	color: #1954AB;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;	
+	float : right;
+}
+
+#osob {
+	margin-left: 185px;
+	margin-top: 10px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	float : left;
+}
+
+#nauczyciel {
+	padding-top: 25px;
+	padding-right: 55px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+
+	float: right;
+}
+
+ul.opis {
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left: 45px;
+  text-align: left;
+  font-size: 11px;	
+}
+
+#loader{
+	float:right;
+	padding-left: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+#informacje-6{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin:auto;
+	margin-top: 10px;
+	width : 480px;
+	height : 30px;
+}
+/*-------------------------------- Linki ------------------------------ */
+
+a.linki {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+}
+a.linki:hover {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #aaa;
+}
+
+/* --------------------------------------------------- */
+/*					LEWA I PRAWA STRONA				   */
+/* --------------------------------------------------- */
+
+.center {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.left-u {
+	float: left;
+	width: 500px;
+	margin: 20px 0px 0px 20px;
+}
+
+.right-u {
+	float: right;
+	width: 650px;
+	margin: 20px 20px 0 20px; 
+}
+
+
+/* ------------------------ FORMULARZ --------------------------------*/
+form, fieldset {
+	margin: 0;
+	padding: 0px;
+	border: 0;
+}
+td.dane {
+	margin: 5px;
+	width: 110px;
+	display: block;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	padding: 5px;
+}
+select {
+	width: 256px;
+}
+/* ----- Formularz - Dodaj klasę ------ */
+#nauczyciele, #nauczycieleEdycja, #zawod, #zawodEdycja{
+	width: 320px;
+}
+#klasa, #klasaEdycja {
+	width: 308px;
+}
+
+input.pole, select {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.pole:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+/* -- POLE WYŚRODKOWANE ---*/
+input.pole-center {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	text-align: center;
+	font-size: 12px;
+	color: #111;
+	padding: 4px 0 4px 0;
+	background: #fff;
+	border: 1px dotted #cce8ff;
+}
+
+input.pole-center:focus {
+	color: #000;
+	font-weight: bold;
+	background: #DDF0FF;
+}
+/* -- POLE Z LEWEJ ---*/
+input.pole-left {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	text-align: left;
+	font-size: 12px;
+	color: #111;
+	padding: 4px 0 4px 2px;
+	background: #fff;
+	border: 1px dotted #cce8ff;
+}
+
+input.pole-left:focus {
+	color: #000;
+	font-weight: bold;
+	background: #DDF0FF;
+}
+
+input.button {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	text-align: center;
+	margin: auto;
+}
+/* --- Pole ukrtye --*/
+#ukrytaEdycjaNauczyciele {
+	display: none;
+}
+/* ------------------------ TABELA USER ----------------------------- */
+#user-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 520px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#user-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#user-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#user-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* ------------------------ TABELA CENTER ----------------------------- */
+#center-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 800px;
+	border-collapse: collapse;
+}
+#center-tabela td
+{
+	width: 200px;
+	height: 36px;
+	font-weight: bold;
+	color: #669;
+	padding: 3px 8px;
+}
+/* ------------------------ TABELA CENTER 2 ----------------------------- */
+#center-2-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	border-collapse: collapse;
+}
+#center-2-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-2-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-2-tabela td.lewy
+{
+	width: 650px;
+	text-align: left;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-2-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+/* ------------------------ TABELA CENTER 3 ----------------------------- */
+#center-3-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 800px;
+	border-collapse: collapse;
+}
+#center-3-tabela td
+{
+	font-weight: bold;
+	border-bottom: 0px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-3-tabela td.srodek
+{
+	font-weight: bold;
+	border-bottom: 0px solid #ccc;
+	text-align: center;
+	color: #669;
+	padding: 6px 8px;
+}
+/*--------------------------TABELA KALENDARZ --------------------------------*/
+#kalendarz
+{
+	width: 1000px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	background: #fff;
+	border-collapse: collapse;
+}
+#kalendarz td
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #039;
+	padding: 5px;
+}
+#odKal, #doKal, #wydarzenieKal
+{
+	padding: 4px;
+	border: 1px dotted #6678b1;
+	font-weight: bold;
+	color: #669;
+}
+
+#wydarzenieKal:focus, #doKal:focus, #odKal:focus {
+	background: #ECF7FF;
+}
+/* ------------------------ TABELA DANE SZKOŁY ----------------------------- */
+#center-tabela-szkola
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	background: #fff;
+	width: 550px;
+	border-collapse: collapse;
+}
+#center-tabela-szkola td
+{
+	width: 250px;
+	height: 30px;
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-szkola .prawy
+{
+	border-right: 1px solid #ccc;
+	text-align: right;
+	width: 170px;
+	height: 30px;
+	font-weight: normal;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-szkola .lewy
+{
+	text-align: left;
+	width: 300px;
+	height: 30px;
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-szkola .edycja
+{
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #669;
+	padding: 30px;
+}
+
+#center-tabela-szkola a.edycja_link {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+}
+#center-tabela-szkola a.edycja_link:hover {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #aaa;
+}
+/* ------------------------ TABELA DZWONKI ----------------------------- */
+#dzwonki
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 250px;
+	border-collapse: collapse;
+}
+#dzwonki tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#dzwonki th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	border: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#dzwonki td
+{
+	width: 50px;
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#przycisk, #konWpis {
+	padding-top: 10px;
+}
+
+/* --------------------------- TABELA ORGANIZACJA ROKU --------------------------- */
+#orgRokuSzkol
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 650px;
+	border-collapse: collapse;
+}
+#orgRokuSzkol tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#orgRokuSzkol th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	border: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#orgRokuSzkol td
+{
+	width: 200px;
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#orgRokuSzkol td.data
+{
+	width: 80px;
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#orgRokuSzkol td.nr
+{
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#orgRokuSzkol td.lewy
+{
+	width:400px;
+	height: 20px;
+	text-align:left
+	font-weight: bold;
+	color: #669;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+
+td.prawy
+{
+	width: 240px;
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+	text-align: right;
+}
+td.lewy
+{
+	font-weight: bold;
+	color: #669;
+	padding: 6px 8px;
+	text-align: left;
+}
+td{
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 12px;
+  padding: 7px;
+}
+/* ------------------------ TABELA PRZEDMIOTY ----------------------------- */
+#przedmioty, #szkola, #klasy
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 600px;
+	border-collapse: collapse;
+}
+td.opis {
+  margin: 5px;
+  width: 200px;
+  display: block;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 12px;
+  text-align: right;
+  padding: 5px;
+}
+/* */
+.tooltip > .tooltip-inner {
+    background-color: #fff; 
+    color: #000; 
+    border: 1px solid #CCCCCC; 
+}
+
+.tooltip.top > .tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #CCC
+}
+.tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #CCC;
+}
+.tooltip.bottom > .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #CCC;
+}
+.tooltip.right > .tooltip-arrow{
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid #CCC;
+}
+/* ------------------------ CZĘŚĆ GÓRNA MENU ------------------------ */
+
+/* reset domyślnych ustawien CSS dla OL oraz UL */
+#menu, #menu ul, #menu ol {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+/* wygląd części głównej - OL */
+#menu  {
+  background-color:#FFF;
+  font-size:13px;
+  line-height:30px;
+  text-align:center;
+}
+
+/* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+#menu a{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  font-weight: bold;
+  padding:0 5px;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol */
+#menu > li {
+  float:left;
+  width:154px;
+  margin-left:1px;
+  background-color:#1954ab;
+  height:30px;
+}
+
+/* wygląd elementu - li - pierwszego dziecka elementu - ol */
+#menu > li:first-child {
+  margin-left:0;
+}
+
+/* tło - li */
+#menu > li:hover {
+  background-color: #00a9dd;
+}
+
+/* kolor czcionki - li*/
+#menu > li:hover > a {
+  color: #F0FCFF;
+}
+
+/* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > ul {
+  display:block;
+}
+
+p.menu{
+	margin:auto;
+	color:#fff;
+	font-weight: bold;
+	cursor: default;
+}
+
+/* ------------------------ CZĘŚĆ ROZWIJANA MENU-POZIOM-1 ----------------------- */
+
+/* wygląd głównych rozwijanych elementów - ul */
+#menu > li > ul {
+	    text-align:left;
+		display:none;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li {
+  position:relative;
+  background-color: #1954ab;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li > a {
+  border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+#menu > li > ul > li:hover {
+  background-color:#00a9dd;
+}
+
+/* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+#menu > li > ul > li:hover > a {
+  color:#fff;
+}
+
+/* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+#menu > li > ul > li > ol {
+  display:none;
+  width:100%;
+  position:absolute;
+  left:100%;
+  margin-top:-20px;
+}
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+#menu > li > ul > li:hover > ol {
+  display:block;
+}
+
+/* wygląd elementów - li - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li {
+  background-color:#1954ab;
+}
+
+/* wygląd elementów - a - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li > a {
+  border-top:1px solid #FFF;
+  border-left:1px solid #FFF;
+}
+
+/* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+#menu > li > ul > li > ol > li > a:hover {
+  background-color:#aaa;
+  color: #fff;
+}
+
+/* ------------------------WSPÓLNE----------------------- */
+
+/* strzałka w prawo */
+#menu .dol {
+  background-image:url('../image/down.png');
+  background-repeat:no-repeat;
+  background-position:98% center;
+}
+
+/* strzałka w dół */
+#menu .prawo {
+  background-image:url('../image/right.png');
+  background-repeat:no-repeat;
+  background-position:98% center;
+}

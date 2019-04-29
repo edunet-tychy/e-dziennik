@@ -1,0 +1,1461 @@
+@charset "utf-8";
+/* --------------------------------------------------- */
+/*						OKNO DZIENNIKA				   */
+/* --------------------------------------------------- */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+div{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#kontener {
+	width: 1240px;
+	min-height: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cce8ff;
+	text-align: center;
+	overflow: hidden;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+#logo {
+	background-color: #1954ab;
+	text-align :center;
+	width:1240px;
+	margin-left :auto;
+	margin-right:auto;
+	height : 130px;
+}
+
+.button {
+  cursor:pointer;
+}
+
+#opis{
+	background-color: #cce8ff;
+	border: 1px solid #1954ab;
+	width : 1238px;
+	height : 50px;
+	float : left;
+}
+
+#spis{
+	background-color: #cce8ff;
+	border-left: 1px solid #1954ab;
+	border-right: 1px solid #1954ab;
+	text-align :center;
+	width:1239px;
+	height: 82px;
+}
+
+#czescGlowna{
+	border: 1px solid #1954ab;
+	background-color: #FFF;
+	width : 1238px;
+	min-height: 600px;
+	clear : left;
+	overflow: hidden;
+}
+
+#czesc{
+	margin-top: 30px;
+	background-color: #FFF;
+	clear : right;
+	overflow: hidden;
+}
+
+#nowosc{
+  margin-top: 16px;
+  margin-left: 60px;
+  font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #05477E;
+  font-weight: bold;
+  float: left;
+}
+
+#stopka{
+	background-color: #1954ab;
+	width : 1240px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 30px;
+}
+
+p.stopka{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	margin-top:0px;
+	margin-left: 6px;
+	padding: 6px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#zalogowany{
+	margin-top: -60px;
+	margin-bottom: 60px;
+	padding-right: 30px;
+	color: #FFF;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#frek{
+	background-color: #FFF;
+	clear : left;
+	overflow: hidden;
+}
+#frek-2{
+	background-color: #FFF;
+	clear : left;
+	overflow: hidden;
+}
+
+p.info{
+	padding-top: 2px;
+	padding-right: 30px;
+	text-align: right;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.panel{
+	padding-top: 10px;
+	padding-left: 180px;
+	text-align: left;
+  	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+p.kontrola {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+p.termin {
+	margin: 0px;
+	padding:5px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight: bold;
+	color: #000;
+}
+
+#wpisPasswd {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #F00;
+}
+
+#wpisPasswdKontrola{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #F00;
+}
+
+#konPasswd {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+	margin: 10px;
+}
+
+#konLoginu {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+#konDanych {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #F00;
+}
+
+h3 {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 0 20px 0;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#nagRamka1, #nagRamka2, #nagRamka3{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#nagRamka{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#nagRamka4{
+	margin-left: 220px;
+	margin-right: 220px;
+}
+
+#dane-ucznia{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 10px;
+	letter-spacing: -1px;
+	color: #01294f;
+	margin: 30px 0px 20px 0px;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#baza {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+span.red {
+	color: #F11014;
+}
+/* --------------------------------------------------- */
+/*							LINKI					   */
+/* --------------------------------------------------- */
+
+a.linki {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #00a9dd;
+}
+a.linki:hover {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #aaa;
+}
+
+/* --------------------------------------------------- */
+/*					LEWA I PRAWA STRONA				   */
+/* --------------------------------------------------- */
+
+.center {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+.center-2 {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+.center-3 {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+}
+.left {
+	float: left;
+	width: 500px;
+	margin: 20px 0px 0px 20px;
+}
+
+.right {
+	border: 1px solid #FFF;
+	float: right;
+	width: 650px;
+	margin: 20px 20px 0 20px;  
+}
+
+.lewy-2 {
+	float: left;
+	margin-left: 20px;
+	text-align: left;
+	margin-bottom: 0px;
+}
+.prawy-2 {
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+	margin-bottom: 0px;
+}
+.prawy-3 {
+	float: right;
+	margin-right: 100px;
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+/* --------------------------------------------------- */
+/*						FORMULARZE					   */
+/* --------------------------------------------------- */
+
+form, fieldset {
+	margin: 0;
+	padding: 0px;
+	border: 0;
+}
+td.dane {
+	margin: 5px;
+	width: 110px;
+	display: block;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	padding: 5px;
+}
+
+td.dane-3 {
+	width: 90px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px 0px 0px 20px;
+}
+
+td.dane-4 {
+	width: 150px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding: 2px 0px 0px 20px;
+}
+
+td.dane-5 {
+	width: 150px;
+	border-left: 1px solid #ddd;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-align: left;
+	padding: 10px 0px 10px 20px;
+}
+
+select {
+	width: 260px;
+}
+
+select.min {
+	width: 198px;
+}
+select.min-2 {
+	width: 60px;
+}
+select.min-3 {
+	width: 200px;
+	font-size: 10px;
+	padding: 2px;
+}
+select.min-4 {
+	width: 183px;
+}
+select.min-5 {
+	width: 120px;
+	font-size: 10px;
+	padding: 1px;
+}
+input.pole, input.pole-center, select, textarea {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	color: #111;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+}
+
+input.pole:focus, input.pole-center:focus, textarea:focus {
+	color: #fff;
+	background: #1954ab;
+	border: 1px solid #111;
+}
+
+input.button {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	text-align: center;
+	margin: auto;
+}
+
+input.przycisk {
+	font-size: 12px;
+	color: #111;
+	padding: 7px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.op {
+	color: #000;
+	font-weight: bold;
+}
+
+#plec {
+	width: 198px
+}
+input.ob {
+	background: transparent;
+	border: 0px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 13px;
+	height: 13px;
+	font-size: 12px;
+	text-align: center;
+	color: #111;
+	padding: 0px;
+	cursor: pointer;
+}
+/* --------------------------------------------------- */
+/*						TABELA USER - LEWY			   */
+/* --------------------------------------------------- */
+#user-tabela
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 650px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#user-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#user-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#user-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA USER - PRAWY			   */
+/* --------------------------------------------------- */
+#user-tabela-p
+{ 
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	margin-left: 350px;
+	width: 650px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#user-tabela-p th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#user-tabela-p td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#user-tabela-p tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*						TABELA CENTER 				   */
+/* --------------------------------------------------- */
+#center-tabela
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 750px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*				TABELA CENTER PODRĘCZNIKI			   */
+/* --------------------------------------------------- */
+#center-tabela-pod
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 1200px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 2					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-2
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 900px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod-2 th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod-2 td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-2 td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-2 tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 3					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-3
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 550px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA CENTER 4					   */
+/* --------------------------------------------------- */
+#center-tabela-pod-4
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 1000px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#center-tabela-pod-4 th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#center-tabela-pod-4 td
+{
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 td.tresc
+{
+	width: 400px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 td.tresc-2
+{
+	width: 500px;
+	text-align:justify;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+#center-tabela-pod-4 tbody tr:hover td
+{
+	color: #009;
+	background: #cce8ff;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA PLAN LEKCJI				   */
+/* --------------------------------------------------- */
+#plan
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 1200px;
+	border-collapse: collapse;
+}
+#plan tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#plan th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 2px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#plan th.ng
+{
+	width: 10px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 6px;
+}
+#plan td
+{
+	width: 90px;
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+#plan td.gr
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+}
+#plan td.gr-2
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#plan td.godz
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #ECF7FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#plan td.dwa
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	border-bottom: 2px solid #88CAFF;
+}
+#przycisk, #konWpis {
+	padding-top: 20px;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA ZESTAWIENIA				   */
+/* --------------------------------------------------- */
+#zestawienie
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 800px;
+	border-collapse: collapse;
+}
+#zestawienie tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#zestawienie th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie th.nr
+{
+	width: 40px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 3px;
+}
+#zestawienie th.kl
+{
+	width: 70px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie th.dane
+{
+	width: 200px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie td
+{
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	cursor:pointer;
+}
+#zestawienie td.kto-co
+{
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding-left: 15px;
+	cursor:pointer;
+}
+#zestawienie td.gr-2
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#zestawienie td.godz
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #ECF7FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#zestawienie td.dwa
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	border-bottom: 2px solid #88CAFF;
+}
+
+/* --------------------------------------------------- */
+/*					TABELA ZESTAWIENIA	II			   */
+/* --------------------------------------------------- */
+#zestawienie-2
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 500px;
+	border-collapse: collapse;
+}
+#zestawienie-2 tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+#zestawienie-2 th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie-2 th.zach
+{
+	width: 115px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie-2 th.podtyp
+{
+	width: 120px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 10px;
+}
+#zestawienie-2 th.ng
+{
+	width:38px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 10px;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 3px;
+	cursor:pointer;
+}
+#zestawienie-2 th.msc
+{
+	width: 150px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 3px;
+	cursor:pointer;
+}
+#zestawienie-2 th.raz
+{
+	width: 80px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-bottom: 1px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 3px;
+	cursor:pointer;
+}
+#zestawienie-2 td
+{
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	cursor:pointer;
+}
+#zestawienie-2 td.kto-co
+{
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding-left: 15px;
+	cursor:pointer;
+}
+#zestawienie-2 td.frek
+{
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #88CAFF;
+	cursor:pointer;
+}
+#zestawienie-2 td.zach-2
+{
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding-left: 8px;
+}
+#zestawienie-2 td.miesiac
+{
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding-left: 25px;
+	border: 1px solid #88CAFF;
+}
+#zestawienie-2 td.gr-2
+{
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #CCE8FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#zestawienie-2 td.godz
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #ECF7FF;
+	border: 1px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+}
+#zestawienie-2 td.dwa
+{
+	width: 80px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	border-bottom: 2px solid #88CAFF;
+}
+
+
+/* --------------------------------------------------- */
+/*					TABELA OBECNOŚĆ					   */
+/* --------------------------------------------------- */
+.obecnosc
+{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	width: 1200px;
+	border-collapse: collapse;
+}
+.obecnosc tr:hover td
+{
+	color: #009;
+	background: #ECF7FF;
+}
+.obecnosc th
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 10px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 2px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 4px;
+}
+
+.obecnosc th.nr
+{
+	width: 12px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #88CAFF;
+	border-top: 2px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 6px;
+}
+
+.opis
+{
+	width: 150px;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 11px;
+	border-left: 1px solid #88CAFF;
+	border-right: 1px solid #88CAFF;
+	border-top: 2px solid #88CAFF;
+	border-bottom: 2px solid #88CAFF;
+	background: #CCE8FF;
+	padding: 5px;
+}
+
+.obecnosc td.opis-2
+{
+	height: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+	border-right: 1px solid #88CAFF;
+	border-left: 1px solid #88CAFF;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.obecnosc td
+{
+	height: 20px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #669;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #CCE8FF;
+}
+
+.obecnosc td.gr
+{
+  border-right: 1px solid #88CAFF;
+}
+
+/* --------------------------------------------------- */
+/*						TABELE						   */
+/* --------------------------------------------------- */
+
+#przedmioty, #szkola, #klasy, #obecnosc
+{
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	width: 400px;
+	border-collapse: collapse;
+}
+
+/* --------------------------------------------------- */
+/*						ZAKŁADKI					   */
+/* --------------------------------------------------- */
+
+.nawigacja {
+	margin-top: 50px;
+	margin-left: 118px;
+	text-align:left;
+}
+
+.nawigacja li {
+	display: inline;
+	list-style: none;
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+	font-size: 12px;
+	background: #00a9dd;
+
+}
+
+.nawigacja li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 30px;
+	background: #00a9dd;
+	outline: none;
+}
+
+.nawigacja li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.nawigacja .aktywna {
+	color: #fff;
+	background: #aaa;
+}
+
+.nawigacja .aktywna:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+/* --------------------------------------------------- */
+/*					CZĘŚĆ GÓRNA MENU 				   */
+/* --------------------------------------------------- */
+
+/* reset domyślnych ustawien CSS*/
+#menu, #menu ul, #menu ol {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+/* wygląd części głównej - OL */
+#menu {
+	background-color:#FFF;
+	font-size:13px;
+	line-height:30px;
+	text-align:center;
+}
+
+/* wygląd wszystkich elementów - a - w elemencie - ol */
+#menu a {
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	font-weight: bold;
+	padding:0 5px;
+}
+
+/* wygląd elementów - li - wszystkich dzieci elementu - ol */
+#menu > li {
+	float:left;
+	width:154px;
+	margin-left:1px;
+	background-color:#1954ab;
+	height:30px;
+}
+
+/* wygląd elementu - li - pierwszego dziecka elementu - ol */
+#menu > li:first-child {
+	margin-left:0;
+}
+
+/* tło - li */
+#menu > li:hover {
+	background-color: #00a9dd;
+}
+
+/* kolor czcionki - li*/
+#menu > li:hover > a {
+	color: #F0FCFF;
+}
+
+/* wygląd elementu - ul - dziecka elementu - li */
+#menu > li:hover > ul {
+	display:block;
+}
+
+p.menu{
+	margin:auto;
+	color:#fff;
+	font-weight: bold;
+	cursor: default;
+}
+
+/* --------------------------------------------------- */
+/*			CZĘŚĆ ROZWIJANA MENU-POZIOM-1 			   */
+/* --------------------------------------------------- */
+
+/* wygląd głównych rozwijanych elementów - ul */
+#menu > li > ul {
+	text-align:left;
+	display:none;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li {
+	position:relative;
+	background-color: #1954ab;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li > a {
+	border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > li > ul > li:hover {
+	background-color:#00a9dd;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > li > ul > li:hover > a {
+	color:#fff;
+}
+
+/* --------------------------------------------------- */
+/*			CZĘŚĆ ROZWIJANA MENU-POZIOM-2 			   */
+/* --------------------------------------------------- */
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+#menu > li > ul > li > ol {
+	display:none;
+	width:100%;
+	position:absolute;
+	left:100%;
+	margin-top:-20px;
+}
+
+/* wygląd głównego elementu - ol - w drugiej części rozwijanej*/
+#menu > li > ul > li:hover > ol {
+	display:block;
+}
+
+/* wygląd elementów - li - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li {
+	background-color:#1954ab;
+}
+
+/* wygląd elementów - a - w drugiej części rozwijanej */
+#menu > li > ul > li > ol > li > a {
+	border-top:1px solid #FFF;
+	border-left:1px solid #FFF;
+}
+
+/* wygląd elementu - a - w drugiej części rozwijanej*/
+#menu > li > ul > li > ol > li > a:hover {
+	background-color:#aaa;
+	color: #fff;
+}
+
+/* --------------------------------------------------- */
+/*				ELEMENTY WSPÓLNE MENU				   */
+/* --------------------------------------------------- */
+
+/* strzałka w prawo */
+#menu .dol {
+	background-image:url('../image/down.png');
+	background-repeat:no-repeat;
+	background-position:98% center;
+}
+
+/* strzałka w dół */
+#menu .prawo {
+	background-image:url('../image/right.png');
+	background-repeat:no-repeat;
+	background-position:98% center;
+}
+
+/* --------------------------------------------------- */
+/*					PANEL STARTOWY					   */
+/* --------------------------------------------------- */
+
+.linia {
+	height: 1px;
+	width: 910px;
+	background-color:#CCC;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#panel {
+	margin: 30px auto auto 320px;
+	width:1000px;
+	background-color: transparent;
+}
+#panel .linka {
+	border:0px solid #FFF;
+	float:left;
+	width:94px;
+	margin-left:0px;
+	margin-right:20px;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:15px 20px 15px 20px;
+}
+#panel .icona {
+	padding:0px 0px 5px 0px;
+}
+
+#panel .info {
+	text-align:center;
+	font-weight:bold;
+	color:#069;
+	width:134px;
+	margin-left:-20px;
+}
+#panel .linka:hover {
+	background: -ms-linear-gradient(-90deg,#fff,#CCE8FF);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#CCE8FF));
+	background: -moz-linear-gradient(-90deg,#fff,#CCE8FF);
+
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	box-shadow:0 1px 3px rgba(0,0,0,0.3);
+	
+	cursor:pointer;
+}
+#panel .linka:hover .info a {
+	color:#000;
+	text-decoration:none;
+}
+#panel a:link {
+	font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+  	font-size: 12px;
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel a:visited {
+	color: #1954AB;
+	text-decoration: none;
+}
+#panel a:active {
+	color: #900;
+	text-decoration: none;
+}
+#panel .odstep {
+	clear:both;
+	height:1px;
+	background-color:#fff;
+	margin-top:10px;
+	margin-bottom:10px
+}
